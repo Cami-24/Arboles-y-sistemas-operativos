@@ -1,3 +1,5 @@
+from Nodo import Nodo
+
 class RedBlackTree:
     def __init__(self):
         self.NodoFantasma = Nodo(0)
