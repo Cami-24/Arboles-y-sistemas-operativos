@@ -225,7 +225,7 @@ def main():
     print()
 
 
-    // Escenarios
+    #Escenarios
     escenarioA()
 
 
