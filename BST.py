@@ -18,3 +18,4 @@ class BST:
                 actual = actual.right
 
         return None, iteraciones
+    
