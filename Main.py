@@ -2,6 +2,7 @@ import random
 import math
 import matplotlib.pyplot as plt
 from graphviz import Digraph
+import os
  
 from BST import BST
 from SplayTree import SplayTree
@@ -39,6 +40,7 @@ def visualizar_bst(arbol, titulo, nombre_archivo, max_nodos=60):
              labelloc='t', fontsize='14')
     dot.render(nombre_archivo, format='png', cleanup=True)
     print(f"    -> {nombre_archivo}.png")
+    os.startfile(f"{nombre_archivo}.png")  # Open the PNG file
  
  
 def visualizar_rb(arbol, titulo, nombre_archivo, max_nodos=60):
@@ -70,6 +72,7 @@ def visualizar_rb(arbol, titulo, nombre_archivo, max_nodos=60):
              labelloc='t', fontsize='14')
     dot.render(nombre_archivo, format='png', cleanup=True)
     print(f"    -> {nombre_archivo}.png")
+    os.startfile(f"{nombre_archivo}.png")  # Open the PNG file
  
  
 # ─────────────────────────────────────────────────────────────
@@ -167,6 +170,7 @@ def escenarioA():
  
     plt.tight_layout()
     plt.savefig("escenario_A_comparacion.png", dpi=150, bbox_inches='tight')
+    plt.show()  # Add this to display the plot
     plt.close()
     print("    -> escenario_A_comparacion.png")
     print("\n Escenario A completado.\n")

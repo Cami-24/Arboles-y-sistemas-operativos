@@ -2,7 +2,7 @@ class SplayTree:
     def __init__(self):
         self.root = None
 
-     def _right_rotate(self, x):
+    def _right_rotate(self, x):
         y = x.left
         x.left = y.right
         if y.right:
